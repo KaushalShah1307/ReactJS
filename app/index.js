@@ -7,10 +7,10 @@ var ReactDOM = require("react-dom");
 var HelloWorld = React.createClass({
     render: function () {
     return (
-            <div>Hello  ReactJS</div>
+            <div>Hello {this.props.name}</div>
         )
 
 }
 });
 
-ReactDOM.render(<HelloWorld/>, document.getElementById('app'));
+ReactDOM.render(<HelloWorld name="Kaushal"/>, document.getElementById('app'));
